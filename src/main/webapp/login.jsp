@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,8 +11,6 @@
 <meta name="HandheldFriendly" content="true">
 <meta name="format-detection" content="telephone=no">
 <meta content="IE=edge" http-equiv="X-UA-Compatible">
-<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
 <link rel="shortcut icon" href="resources/img/favicon.png"
 	type="image/x-icon">
 <link rel="stylesheet" href="resources/css/libs.min.css">
@@ -22,8 +20,17 @@
 .repair {
 	padding: 25px 45px;
 }
+
 #sign_up {
 	height: 60px;
+}
+
+ul>li {
+	list-style: none
+}
+
+a {
+	text-decoration: none;
 }
 </style>
 </head>
@@ -37,7 +44,9 @@
 		</video>
 
 		<main class="page-first-screen">
-			<div class="uk-grid uk-grid-small uk-child-width-1-2@s uk-flex-middle uk-width-1-1" data-uk-grid>
+			<div
+				class="uk-grid uk-grid-small uk-child-width-1-2@s uk-flex-middle uk-width-1-1"
+				data-uk-grid>
 				<div>
 					<div class="form-login">
 						<div class="form-login__box">
@@ -67,34 +76,47 @@
 						</div>
 					</div>
 				</div>
-						<div class="form-login repair hidden" id="modal" style="margin-left: 0px; height:670px;" />
-						<div class="modal hidden" id="modal">
-							<div style="display: flex; justify-content: flex-end;">
-								<button class="modal-close" id="jsCloseBtn">X</button>
-							</div>
-							<div class="uk-heading-line uk-text-center">
-								<span>회원가입</span>
-							</div>
-							<div class="uk-margin">
-								<input class="uk-input" type="text" placeholder="Id">
-							</div>
-							<div class="uk-margin">
-								<input class="uk-input" type="password" placeholder="Password">
-							</div>
-							<div class="uk-margin">
-								<input class="uk-input" type="password" placeholder="Password">
-							</div>
-							<div class="uk-margin">
-								<input class="uk-input" type="text" placeholder="Riot_name">
-							</div>
-							<div class="uk-margin">
-								<input class="uk-input" type="text" placeholder="연락처">
-							</div>
-							
-							<div class="uk-margin">
-								<a class="uk-button uk-button-danger uk-width-1-1" id="sign_up" href="#">로그인</a>
-							</div>
-						</div>
+				<div class="form-login repair hidden" id="modal"
+					style="margin-left: 0px; height: 670px;" />
+				<div class="modal hidden" id="modal">
+					<div style="display: flex; justify-content: flex-end;">
+						<button class="modal-close" id="jsCloseBtn">X</button>
+					</div>
+					<div class="uk-heading-line uk-text-center">
+						<span>회원가입</span>
+					</div>
+					<div class="uk-margin">
+						<input class="uk-input" type="text" placeholder="Id">
+					</div>
+					<div class="uk-margin">
+						<input class="uk-input" type="password" placeholder="Password">
+					</div>
+					<div class="uk-margin">
+						<input class="uk-input" type="password" placeholder="Password">
+					</div>
+					<div class="uk-margin">
+						<input class="uk-input" type="text" placeholder="Riot-name">
+					</div>
+					<div class="uk-margin">
+						<input class="uk-input" type="text" placeholder="연락처">
+					</div>
+					<from action="#">
+					<ul>
+						<li> <input type="checkbox" /> 이용약관, 개인정보 수집 및 이용에 모두 동의합니다.
+						</li>
+						<li>
+						<li> <input type="checkbox" /> 이용약관 동의(필수)</li>
+						</li>
+						<li>
+						<li> <input type="checkbox" /> 개인정보 수집 및 이용에 대한 안내(필수)</li>
+						</li>
+					</ul>
+					</from>
+					<div class="uk-margin">
+						<a class="uk-button uk-button-danger uk-width-1-1" id="sign_up"
+							href="#">가입하기</a>
+					</div>
+				</div>
 			</div>
 		</main>
 	</div>
